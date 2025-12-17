@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Quiz de Conhecimentos Gerais</h1>
+</header>
+
+<main>
+    <section id="quiz">
+        <p id="pergunta"></p>
+
+        <form id="formQuiz">
+            <label>
+                <input type="radio" name="resposta" value="0"> 
+                <span id="op0"></span>
+            </label><br>
+
+            <label>
+                <input type="radio" name="resposta" value="1"> 
+                <span id="op1"></span>
+            </label><br>
+
+            <label>
+                <input type="radio" name="resposta" value="2"> 
+                <span id="op2"></span>
+            </label><br>
+
+            <button type="button" onclick="proximaPergunta()">Responder</button>
+        </form>
+
+        <p id="resultado"></p>
+    </section>
+</main>
+
+<footer>
+    <p>Projeto Final - Desenvolvimento Web I</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
